@@ -200,4 +200,15 @@
         <item name="android:textColor">?attr/fluentuiForegroundSecondaryColor</item>
     </style>
 
+    <style name="ThemeFromContainer" parent="FluentContainerTheme">
+        <item name="colorPrimary">#00ff00</item>
+    </style>
+
+    <style name="ThemeFromContainer.Launcher">
+        <!--Use background instead of windowBackground to account for differences in bottom nav bar height treatment-->
+        <item name="android:background">@null</item>
+        <item name="android:statusBarColor">?attr/fluentuiBackgroundColor</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+    </style>
+
 </resources>

@@ -32,7 +32,7 @@ class DemoListActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         // Launch Screen: Setting the theme here removes the launch screen, which was added to this activity
         // by setting the theme to App.Launcher in the manifest.
-        setTheme(R.style.AppTheme)
+        setTheme(R.style.ThemeFromContainer)
 
         super.onCreate(savedInstanceState)
         dualScreenMode = DuoSupportUtils.isDualScreenMode(this)

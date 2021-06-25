@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Example theme with Android parent theme, you will have to override styles and attrs -->
+    <style name="Base.FluentContainerTheme" parent="">
+        <item name="colorPrimary">#ff0000</item>
+        <item name="colorPrimaryDark">#ff4444</item>
+        <item name="colorAccent">#ff8888</item>
+        <item name="android:textColorPrimary">@color/fluentui_gray_900</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="homeAsUpIndicator">@drawable/ms_ic_arrow_left_24_filled_toolbar</item>
+        <item name="android:windowBackground">@color/fluentui_white</item>
+        <item name="toolbarStyle">@style/Widget.FluentUI.Toolbar</item>
+        <item name="actionOverflowButtonStyle">@style/Widget.FluentUI.Toolbar.OverflowButtonStyle</item>
+        <item name="buttonStyle">@style/Widget.FluentUI.Button</item>
+         <item name="checkboxStyle">@style/Widget.FluentUI.CheckBox</item>
+        <item name="radioButtonStyle">@style/Widget.FluentUI.RadioButton</item>
+        <item name="fluentuiCompoundButtonTintDefaultColor">@color/fluentui_gray_400</item>
+        <item name="fluentuiCompoundButtonTintCheckedColor">@color/fluentui_communication_blue</item>
+    </style>
+
+    <style name="Base.FluentContainerTheme.FluentCore" parent="Base.FluentContainerTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="homeAsUpIndicator">@drawable/ms_ic_arrow_left_24_filled_toolbar</item>
+        <item name="android:windowBackground">@color/fluentui_white</item>
+        <!--Launch Screen: Remove the background that was set in the launch screen theme-->
+        <item name="android:background">@null</item>
+        <item name="android:statusBarColor">?android:colorPrimary</item>
+        <item name="toolbarStyle">@style/Widget.FluentUI.Toolbar</item>
+        <item name="actionOverflowButtonStyle">@style/Widget.FluentUI.Toolbar.OverflowButtonStyle</item>
+        <item name="buttonStyle">@style/Widget.FluentUI.Button</item>
+        <item name="checkboxStyle">@style/Widget.FluentUI.CheckBox</item>
+        <item name="radioButtonStyle">@style/Widget.FluentUI.RadioButton</item>
+        <item name="fluentuiCompoundButtonTintDefaultColor">@color/fluentui_gray_400</item>
+        <item name="fluentuiCompoundButtonTintCheckedColor">@color/fluentui_communication_blue</item>
+    </style>
+
+    <style name="Base.FluentContainerTheme.FluentOthers" parent="Base.FluentContainerTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/fluentui_white</item>
+        <!--Launch Screen: Remove the background that was set in the launch screen theme-->
+        <item name="android:background">@null</item>
+        <item name="android:statusBarColor">?android:colorPrimary</item>
+    </style>
+
+    <style name="FluentContainerTheme" parent="Base.FluentContainerTheme" />
+
+</resources>
